@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UMG - Soluciones en salud</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- =======================================================
+        Theme Name: Medilab
+        Theme URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+        Author: BootstrapMade.com
+        Author URL: https://bootstrapmade.com
+    ======================================================= -->
+    <style type="text/css">
+		.navbar-brand img{
+			width: 230px !important;
+		}
+
+		.top-nav-collapse{
+			padding: 5px 0px 10px 0px;
+		}
+
+		.section-padding{
+			padding: 90px 0px 30px 0px;
+		}
+
+		hr.botm-line
+		{
+		    background:#f0290d;
+		}
+
+		/*rgb(204, 10, 10)
+			fondo:     background-color: rgba(204, 10, 10, 0.55);
+;
+		*/
+		
+		/*----- Style rojo ----*/
+
+		.bg-color{
+			/*background-color:rgba(83, 13, 13, 0.78); */
+			background-color: rgba(27, 13, 83, 0.78);; 
+		}
+
+		.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+			/*background-color:rgba(232, 6, 6, 0.21);*/
+			/*background-color:rgba(232, 6, 6, 0.53);*/
+			background-color:rgb(172, 52, 17);
+		}
+
+		.btn-appoint, .btn-appoint:hover, .btn-appoint:focus{
+			/*background-color:rgba(184, 12, 12, 0.91);*/
+			background-color:rgb(40, 30, 72);
+		}
+
+		.top-nav-collapse{
+			/*background: rgba(90, 28, 28, 0.9);*/
+			/*background: #000;*/
+			background: #041744;
+		}
+
+		body{
+			color:#555;
+		}
+		
+		.fa-check-square{
+			color:#cc1717;
+		}
+
+		.icon i{
+			color:#cc1717;
+			margin-bottom: 0px;
+		}
+		
+		.fa-2x{
+			color:#cc1717;
+		}
+
+		.btn-form, .btn-form:hover, .btn-form:focus{
+			    background-color: #b80c0c;
+		}
+		
+		#footer{
+			/*background: rgba(90, 28, 28, 0.9);*/
+			background: rgb(4, 23, 69);
+		}
+
+		.list-group-item{
+			padding:8px 10px;
+		}
+
+		.list-group{
+			font-size: 14px;
+		}
+
+		.service-info{
+			text-align: center;
+		}
+
+		/* ------------------- -*/
+
+		@media screen and (max-width: 420px)  { 
+
+	  		.navbar-brand img{
+				width: 230px !important;
+				padding-bottom: 30px;
+			}
+
+			.navbar-brand{
+				padding: 20px 0px 20px 0px;
+			}
+
+			#myNavbar{
+				margin-top:15px;
+				background-color:#682222;
+				background-color:#000;
+			}
+
+		 
+			.top-nav-collapse{
+				    padding: 20px 0px 20px 0px;
+
+			}
+
+      	} 
+    </style>
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" >
+ 	
+ 
+	<section id="banner" class="banner">
+		<div class="bg-color">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container">
+			  	<div class="col-md-12">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#"><img src="img/logo.png" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+				    </div>
+				    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a href="#banner">Inicio</a></li>
+				        <li class=""><a href="#servicios">Servicios</a></li>
+				        <li class=""><a href="#internacion_domiciliaria">Internación domiciliaria</a></li>
+				        <li class=""><a href="#auditorias">Auditorías</a></li>
+				        <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Medicina Laboral <b class="caret"></b></a>
+			                <ul class="dropdown-menu">
+			                  <li class=""><a href="#control_ausentismo">Control de ausentismo</a></li>
+			                  <li class=""><a href="#examenes">Examenes de Ausentismo y otros</a></li>
+			                  <li class=""><a href="#servicio_medico_en_planta">Servicio médico en planta (In Company)</a></li>
+			                  <li class=""><a href="#programas_salud_laboral">Programas de salud laboral</a></li>
+			                </ul>
+			             </li>
+			              <li class=""><a href="#contacto">Contacto</a></li>
+				      </ul>
+				    </div>
+				</div>
+			  </div>
+			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="banner-info">
+						<div class="banner-logo text-center">
+							<h1 class="white" style="font-size:60px; text-shadow:2px 2px #000000 ">UMG</h1>
+						</div>
+						<div class="banner-text text-center">
+							<h1 class="white" >Soluciones en salud</h1>
+							<p>Brindando la máxima calidad, en todo lo que hacemos.</p>
+							<a href="#contacto" class="btn btn-appoint">Contactanos</a>
+						</div>
+						<div class="overlay-detail text-center">
+			               <a href="#servicios"><i class="fa fa-angle-down"></i></a>
+			             </div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+ 
+	<section id="servicios" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<h2 class="ser-title">Nuestros servicios</h2>
+					<hr class="botm-line">
+					<p>UMG es una empresa establecida en mercado de la salud, que se encarga de prestar servicios médicos. Nuestro principal objetivo es brindar la máxima calidad en todo lo que ofrecemos, contamos con un equipo de profesionales acorde a nuestras exigencias y al de las de las empresas que confían en nosotros desde hace tiempo. <br>
+					Somos una S.R.L que cuenta con una Dirección Médica, un equipo de profesionales idóneos, choferes altamente capacitados y comunicados con una eficiente administración dotada de personal predispuesto y formado en el rubro que nos compete.
+					</p>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="service-info">
+						<div class="icon">
+							<i class="fa fa-ambulance"></i>
+						</div>
+						<div class="icon-info">
+							<h4>Medicina Laboral</h4>
+						</div>
+					</div>
+					<div class="service-info">
+						<div class="icon">
+							<i class="fa fa-bed" aria-hidden="true"></i>
+						</div>
+						<div class="icon-info">
+							<h4>Internación domiciliaria</h4>
+						</div>
+					</div>
+					<div class="service-info">
+						<div class="icon">
+							<i class="fa fa-stethoscope"></i>
+						</div>
+						<div class="icon-info">
+							<h4>Insumos médicos y equipamiento</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<div class="service-info">
+						<div class="icon">
+							<i class="fa fa-user-md"></i>
+						</div>
+						<div class="icon-info">
+							<h4>Auditorías de terreno y telefónicas</h4>
+						</div>
+					</div>
+					<div class="service-info">
+						<div class="icon">
+							<i class="fa fa-medkit"></i>
+						</div>
+						<div class="icon-info">
+							<h4>Oxigenoterapia</h4>
+						</div>
+					</div>
+					<div class="service-info">
+						<div class="icon">
+							<i class="fa fa-flask" aria-hidden="true"></i>
+						</div>
+						<div class="icon-info">
+							<h4>Farmacología</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	 
+	<section id="internacion_domiciliaria" class="section-padding" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-12">
+			        <div class="section-title">
+			          <h2 class="head-title lg-line">Internación <br>Domiciliaria</h2>
+			          <hr class="botm-line">
+			          <p class="sec-para">El seguimiento domiciliario nos permite asistir en el domicilio a la
+						mayoría de los pacientes que cursan enfermedades subagudas o en fase de recuperación, crónicas o terminales, complementando y continuando la internación
+						sanatorial u hospitalaria.</p> 
+					 <p class="sec-para">Para ello se cuenta con un equipo de profesionales que nos permite asistir a pacientes que requieren cuidados de baja, mediana o alta complejidad.</p> 
+			        </div>
+			    </div>
+			    <div class="col-md-6 col-sm-8 col-xs-12">
+			       <div style="visibility: visible;" class="more-features-box">
+			        	<img class="img-fluid img-thumbnail" src="img/internacion_domiciliaria.jpg" alt="">
+			        </div>
+			    </div>
+			    <div class="col-md-3 col-sm-8 col-xs-12">
+					<h4 style="margin-top:0px; font-size:15px; line-height:18px;">Prestamos los servicios de internación domiciliaria en todos sus campos.</h4>
+					<ul class="list-group">
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> médicos</li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Enfermería</li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Kinesiología</li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Fonoaudiología</li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Nutrición</li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Terapia ocupacional</li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Radiología y laboratorio</li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Oxigenoterapia</li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Equipamiento de ortopedia</li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Equipamiento de rehabilitación</li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Equipamiento de alimentación</li>
+					</ul>
+			    </div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-8 col-xs-12">
+						<h4 class="cnt-ttl" style="margin-top:0px;">Modus operandi</h4>
+						Cada paciente será asistido en forma programada y con la frecuencia establecida  por un especialista, el cual llevara a cabo los controles necesarios para la atención y contención de los pacientes, nuestros móviles compuestos por un médico capacitado y un chofer calificado, cubren una extensa zona día a día, con informes diarios y constante observación. Mantenemos un vínculo entre los financiadores de salud (O.S, prepagas, mutuales, etc) que nos contratan, los pacientes, sus familiares y nosotros brindando la máxima atención.
+				</div>
+				 
+
+			</div>
+		</div>
+	</section>
+
+	<section id="auditorias" class="section-padding" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-12">
+			        <div class="section-title">
+			          <h2 class="head-title lg-line">Auditorías de<br>Salud</h2>
+			          <hr class="botm-line">
+			          <p class="sec-para"> Sinónimo de control del acto médico o profesional realizado <strong> a distancia </strong> por un medio de comunicación o bien en el propio <strong> terreno </strong> como el caso de las internaciones domiciliarias, equipamiento o aparatología de médico, etc. </p> 
+			        </div>
+			    </div>
+			    <div class="col-md-9 col-sm-8 col-xs-12">
+			    	<div class="col-md-6 col-sm-8 col-xs-12">
+			    		<div style="visibility: visible;" class="more-features-box">
+			        		<img class="img-fluid img-thumbnail" src="img/audotoria_1.jpeg" alt="">
+			        	</div>
+			    	</div>
+			    	<div class="col-md-6 col-sm-8 col-xs-12">
+			    		<div style="visibility: visible;" class="more-features-box">
+			        		<img class="img-fluid img-thumbnail" src="img/auditoria_2.jpeg" alt="">
+			        	</div>
+			    	</div>
+			      
+			    </div>
+			   
+			</div>
+ 
+		</div>
+	</section>
+
+	<section id="control_ausentismo" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-12">
+			        <div class="section-title">
+			          <h2 class="head-title lg-line">Control de <br>Ausentismo</h2>
+			          <hr class="botm-line">
+			          <p class="sec-para">El control de ausentismo nos permite asistirlo a usted en un servicio integrado, eficaz y eficiente para reducir inasistencia laboral en su empresa.</p> 
+					 <p class="sec-para">Sabemos que reduciendo el ausentismo laboral aumenta su capacidad productiva y su rentabilidad, por ende mejora la relación laboral y comercial con sus clientes.</p> 
+			        </div>
+			    </div>
+			    <div class="col-md-6 col-sm-8 col-xs-12">
+			       <div style="visibility: visible;" class="more-features-box">
+			        	<img class="img-fluid img-thumbnail" src="img/contro_ausentismo.jpg" alt="">
+			        </div>
+			    </div>
+			    <div class="col-md-3 col-sm-8 col-xs-12">
+				    <h4 class="cnt-ttl" style="margin-top:0px;">Nuestro servicio </h4>
+					<ul class="list-group">
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Control domiciliario con médicos y móviles propios. </li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Atención los 365 días del año.</li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Cobertura en <strong> CABA </strong> y <strong>GBA. </strong></li>
+					</ul>
+
+			    </div>
+			</div>
+		</div>
+	</section>
+
+	<section id="examenes" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-12">
+			        <div class="section-title">
+			          <h2 class="head-title lg-line">Exámenes de <br>Salud</h2>
+			          <hr class="botm-line">
+			          <p class="sec-para">Los examenes de salud le van a permitir absolverse  de toda responsabilidad con respecto a la pre-existencia de enfermedades detectadas en los exámenes pre-ocupacionales, de allí, surge la importancia de llevarlos a cabo para protegerse ante posibles reclamos luego del inicio del vinculo laboral.</p>  
+			        </div>
+			    </div>
+			    <div class="col-md-7 col-sm-8 col-xs-12">
+
+				    <h4 class="cnt-ttl" style="margin-top:0px;"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Examen médico admisional </h4>
+					<ul class="list-group">
+					  <li class="list-group-item">El Art. 9 de la Ley de Higiene y Seguridad en el trabajo establece que dicho examen debe realizarse obligatoriamente, y llevado a cabo por parte del empleador antes de iniciar el vinculo laboral con su empleado.</li>
+					</ul>
+
+					<h4 class="cnt-ttl" style="margin-top:0px;"> <i class="fa fa-angle-double-right" aria-hidden="true"></i>Examen médico anual </h4>
+					<ul class="list-group">
+					  <li class="list-group-item">Es un examen obligatorio, es asumido por la ART, y se encarga de corroborar la continuación del trabajador a su puesto de trabajo en el transcurso del tiempo.</li>
+					</ul>
+
+					<h4 class="cnt-ttl" style="margin-top:0px;"><i class="fa fa-angle-double-right" aria-hidden="true"></i> ERT: Examen de reingreso al trabajo</h4>
+					<ul class="list-group">
+					  <li class="list-group-item">Es un examen no obligatorio, utilizado para verificar la salud psicofísica del empleado que se encuentra próximo a reincorporarse a su tarea habitual laboral.</li>
+					</ul>
+
+					<h4 class="cnt-ttl" style="margin-top:0px;"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Examen de promoción o reubicación</h4>
+					<ul class="list-group">
+					  <li class="list-group-item">Es realizado por el empleador solo si el trabajador debe asumir nuevos riesgos laborales debido a nuevas exigencias o cambio de puesto laboral.</li>
+					</ul>
+
+					<h4 class="cnt-ttl" style="margin-top:0px;"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Examen de egreso del trabajo</h4>
+					<ul class="list-group">
+					  <li class="list-group-item">Es un examen no obligatorio pero muy importante para constatar el estado de salud del empleado al momento de finalizar su vínculo laboral, y asi, evitar litigios por causas no vinculadas a su puesto de trabajo.</li>
+					</ul>
+
+					 
+
+			    </div>
+			    <div class="col-md-2 col-sm-4 col-xs-12">
+			       <div style="visibility: visible;" class="more-features-box">
+			        	<img class="img-fluid img-thumbnail" src="img/examenes_médicos.jpeg" alt="">
+			        	<img class="img-fluid img-thumbnail" src="img/examenes_medico2.jpeg" alt="">
+			        	<img class="img-fluid img-thumbnail" src="img/examenes_medico3.jpeg" alt="">
+			        	<img class="img-fluid img-thumbnail" src="img/examenes_medico4.jpeg" alt="">
+			        	<img class="img-fluid img-thumbnail" src="img/examenes_medico5.jpeg" alt="">
+			        </div>
+			    </div>
+			  
+			</div>
+		</div>
+	</section>
+
+	<section id="servicio_medico_en_planta" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-12">
+			        <div class="section-title">
+			          <h2 class="head-title lg-line">Servicio Médico <br>en planta (In company)</h2>
+			          <hr class="botm-line">
+			          <p class="sec-para">
+			          	Se trata de un servicio que se brinda in situ, es decir, se envía un médico laboral o se puede conformar un equipo médico multidiciplinario constituido por: médico laboral, enfermero laboral, kinesiólogo, nutricionista, etc. <br> 
+			          	El servicio es ajustado a las necesidades de cada empresa con el fin de promover la salud y prevenir las enfermedades asociadas al trabajo.
+			          </p> 
+			        </div>
+			    </div>
+			    <div class="col-md-6 col-sm-8 col-xs-12">
+			       <div style="visibility: visible;" class="more-features-box">
+			        	<img class="img-fluid img-thumbnail" src="img/in_company_3.jpg" alt="">
+			        </div>
+			    </div>
+			    <div class="col-md-3 col-sm-8 col-xs-12">
+				    <h4 class="cnt-ttl" style="margin-top:0px;">Nuestro servicio </h4>
+					<ul class="list-group">
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Capacitación. </li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Educación sanitaria.</li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Vacunas </li>
+					</ul>
+
+			    </div>
+			</div>
+		</div>
+	</section>
+ 
+	<section id="programas_salud_laboral" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-4 col-xs-12">
+			        <div class="section-title">
+			          <h2 class="head-title lg-line">Programa de <br>salud laboral</h2>
+			          <hr class="botm-line">
+			          <p class="sec-para">
+			          	 Es un programas orientados a los trabajadores que se realizan In Company, con el fin de promover la salud y mejorar el rendimiento laboral, abordando diferentes necesidades y problemáticas de cada empresa con el fin de promover hábitos saludables.
+			          </p> 
+			        </div>
+			    </div>
+			    <div class="col-md-6 col-sm-8 col-xs-12">
+			       <div style="visibility: visible;" class="more-features-box">
+			        	<img class="img-fluid img-thumbnail" src="img/programa_salud.jpeg" alt="">
+			        </div>
+			    </div>
+			    <div class="col-md-3 col-sm-8 col-xs-12">
+				    <h4 class="cnt-ttl" style="margin-top:0px;">Nuestro servicio</h4>
+					<ul class="list-group">
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Reeducación postural/relajación. </li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Prevención de enfermedades cardiovasculares.</li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Prevención y tratamiento de adicciones </li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Prevención de lesiones según actividad laboral </li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Manejo de estrés y alimentación saludable </li>
+					  <li class="list-group-item"><i class="fa fa-check-square" aria-hidden="true"></i> Charlas y actividades con material visual y escrito </li>
+					</ul>
+
+			    </div>
+			</div>
+		</div>
+	</section>
+
+	
+ 
+ 
+	<section id="contacto" class="section-padding"  >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="ser-title">Contacto</h2>
+					<hr class="botm-line">
+				</div>
+				<div class="col-md-4 col-sm-4">
+			      <h3>Información de contacto</h3>
+			      <div class="space"></div>
+			      	<p>	
+			      		<i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>
+			      		Acuña de Figueroa 2775, Fernando De La Mora<br>
+			        </p>
+			      <div class="space"></div>
+			      <p>
+			      	<i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>
+			      	administracion@umgsalud.com
+			      </p>
+			      
+			      <div class="space"></div>
+			      
+			      <p>
+			      	<i class="fa fa-phone fa-fw pull-left fa-2x"></i>
+			      	(2105-1469)
+			      </p>
+			      
+			      <div class="space"></div>
+			      
+			      <p><i class="fa fa-mobile fa-fw pull-left fa-2x"></i>11 2722-2884</p>
+
+			      <div class="space"></div>
+
+			      <p><i class="fa fa-clock-o fa-fw pull-left fa-2x"></i>Lunes a Viernes de 9:00 a 17:00 hs.</p>
+			    </div>
+				<div class="col-md-4 col-sm-8">
+					<div class="contact-info">
+						<h3 class="cnt-ttl">Envianos tu consulta</h3>
+						<div class="space"></div>
+                        <div id="sendmessage">Your message has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+						<!--<form action="" method="post" role="form" class="contactForm">-->
+						<form id="contactForm" name="sentMessage" >
+						    <div class="form-group">
+                                <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Tu email" data-rule="email" data-msg="Please enter a valid email" required />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control br-radius-zero" name="message" id="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje" required></textarea>
+                                <div class="validation"></div>
+                            </div>
+                            
+							<div class="form-action" style="text-align:center">
+								<div id="success"></div>
+								<button type="submit" id="sendMessageButton" class="btn btn-form">Enviar Mensaje</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-8">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1802.8581634096595!2d-57.56989056981236!3d-25.34729834725803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da9475a5bcedd%3A0x298cab3b95aba150!2sAcu%C3%B1a+de+Figueroa%2C+Fernando+De+La+Mora%2C+Paraguay!5e0!3m2!1ses!2sar!4v1515535704131" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+ 
+	<footer id="footer">
+		<div class="top-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 marb20">
+							<div class="ftr-tle">
+								<h4 class="white no-padding">Acerca de nosotros.</h4>
+							</div>
+							<div class="info-sec">
+								<p>UMG es una empresa de servicios médicos y venta de insumos.</p>
+							</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Menú</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="quick-info">
+								<li><a href="index.html"><i class="fa fa-circle"></i>Inicio</a></li>
+								<li><a href="#service"><i class="fa fa-circle"></i>Servicios</a></li>
+								<li><a href="#contact"><i class="fa fa-circle"></i>Internación domiciliaria</a></li>
+								<li><a href="#contact"><i class="fa fa-circle"></i>Control de ausentismo</a></li>
+								<li><a href="#contact"><i class="fa fa-circle"></i>Contacto</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 marb20">
+						<div class="ftr-tle">
+							<h4 class="white no-padding">Seguinos</h4>
+						</div>
+						<div class="info-sec">
+							<ul class="social-icon">
+								<li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+								<li class="bgred"><i class="fa fa-google-plus"></i></li>
+								<li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+								<li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-line" style="display: none">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						© Copyright Medilab Theme. All Rights Reserved
+                        <div class="credits">
+                            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>  
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!--<script src="contactform/contactform.js"></script>-->
+    <script src="js/contact_me.js"></script>
+    <script type="text/javascript">
+    	// javascript:document.body.contentEditable='true'; document.designMode='on'; void 0 Ortografia
+    </script>
+    
+  </body>
+</html>
